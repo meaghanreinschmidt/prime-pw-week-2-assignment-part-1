@@ -24,7 +24,7 @@ let luckyNumber = 17;
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
 
-console.log('My name is', fullName, 'and I think', luckyNumber, 'is a winner!');
+console.log('My name is', fullName + ',', 'and I think', luckyNumber, 'is a winner!');
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 
@@ -89,7 +89,7 @@ if(pets < allowedPets) {
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
-
+// I am not sure what to do here
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -104,8 +104,10 @@ switch(luckyNumber) {
         break;
     case 2:
         console.log('Second is the best');
+        break;
     case 3:
         console.log('Third is the one with the polka dot dress');
+        break;
     default:
         console.log('Luck is what happens when preparation meets opportunity');  
 }
