@@ -18,7 +18,8 @@ console.log(fullName);
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 
-let luckyNumber = 17;
+let luckyNumber = '';
+luckyNumber = '17';
 
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
@@ -89,7 +90,16 @@ if(pets < allowedPets) {
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
-// I am not sure what to do here
+let mostPets;
+if(pets > friendsPets) {
+    mostPets = pets;
+    console.log('I have more pets')
+} else if (pets < friendsPets) {
+    mostPets = friendsPets
+    console.log('My friend has more pets')
+} else if(pets == friendsPets) {
+    console.log('The number of pets it equal');
+}
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -114,6 +124,6 @@ switch(luckyNumber) {
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-adventurous = true ? 'Adventures are great!' : 'How about we stay home?';
+adventurous == true ? console.log('Adventures are great!') : console.log('How about we stay home?');
 
 console.log(adventurous);
